@@ -1,38 +1,45 @@
-
 <h1 align="center">🚦 Smart Traffic Control System</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Course-Data%20Structures-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Project-Semester%20Project-green?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white"/>
 </p>
 
 <p align="center">
-A C++ console-based Smart Traffic Control System developed as a semester project for the Data Structures course. The project demonstrates the implementation of Circular Queue, Circular Linked List, Stack, Binary Search Tree (BST), and Arrays in a traffic management simulation.
+A C++ console-based Smart Traffic Control System developed for the Data Structures course. This project demonstrates the practical implementation of Circular Linked List, Circular Queue, Stack, Array, and Binary Search Tree (BST) in a traffic management simulation.
 </p>
 
 ---
 
 # 📌 Overview
 
-The **Smart Traffic Control System** simulates traffic signal management at a four-way intersection.
+The **Smart Traffic Control System** is a menu-driven console application that simulates traffic management at a four-way intersection.
 
-The system automatically rotates traffic signals, simulates vehicle movement, allows manual traffic updates for each lane, stores recent system events using a Stack, and manages registered vehicle records using a Binary Search Tree (BST).
+The project demonstrates how multiple Data Structures work together in a single application.
 
-This project demonstrates how multiple data structures work together to solve a real-world traffic management problem.
+The system:
+
+- Simulates traffic signal rotation.
+- Maintains vehicle counts for each traffic lane.
+- Stores recent system events using a Stack.
+- Provides O(1) lane lookup using an Array.
+- Maintains registered vehicle records using a Binary Search Tree (BST).
+
+This project was developed as a **Data Structures Semester Project** at the **University of Central Punjab (UCP)**.
 
 ---
 
 # 🎯 Project Objectives
 
 - Demonstrate practical implementation of Data Structures.
-- Simulate traffic signal rotation.
+- Simulate traffic signal management.
 - Manage vehicle counts efficiently.
-- Implement Binary Search Tree operations.
-- Record recent system events using Stack.
-- Perform O(1) lane updates using Arrays.
-- Develop a menu-driven simulation.
+- Store system logs using a Stack.
+- Maintain vehicle records using BST.
+- Develop a complete menu-driven application.
 
 ---
 
@@ -40,36 +47,20 @@ This project demonstrates how multiple data structures work together to solve a 
 
 | Feature | Description |
 |---------|-------------|
-| 🚦 Traffic Signal Simulation | Simulates traffic light rotation |
-| 🚗 Vehicle Count Monitoring | Maintains vehicle count for each lane |
+| 🚦 Traffic Signal Management | Simulates traffic signal rotation |
+| 🚗 Lane Vehicle Monitoring | Maintains vehicle count for every lane |
 | ⚡ Manual Lane Update | Update lane traffic using O(1) Array lookup |
-| 📚 System Logs | Store recent system events using Stack |
-| 🌳 Vehicle Registry | Store vehicle records using BST |
+| 📚 System Logs | Store recent traffic events using Stack |
+| 🌳 Vehicle Registry | Manage vehicle records using BST |
 | ➕ Add Vehicle | Insert vehicle into BST |
-| 🔍 Search Vehicle | Search vehicle using Plate ID |
-| ❌ Delete Vehicle | Remove vehicle from BST |
-| 📋 Display Registry | Display all registered vehicles using Inorder Traversal |
-| 🖥️ Menu Driven | Interactive console application |
+| 🔍 Search Vehicle | Search vehicle by Plate ID |
+| ❌ Delete Vehicle | Delete vehicle from BST |
+| 📋 Display Vehicle Registry | Display all vehicles using Inorder Traversal |
+| 🖥️ Interactive Menu | Console-based menu system |
 
 ---
 
-# ✅ Core DSA Requirements
-
-| Requirement | Status |
-|------------|--------|
-| Arrays | ✅ |
-| Linked List | ✅ Circular Linked List |
-| Queue | ✅ Circular Queue |
-| Stack | ✅ |
-| Binary Search Tree | ✅ |
-| BST Insert | ✅ |
-| BST Search | ✅ |
-| BST Delete | ✅ |
-| Menu Driven System | ✅ |
-
----
-
-# 🧠 Data Structures Used
+# ✅ Core Data Structures
 
 | Data Structure | Purpose |
 |---------------|---------|
@@ -77,19 +68,19 @@ This project demonstrates how multiple data structures work together to solve a 
 | Circular Queue | Rotates traffic signals |
 | Array | Provides O(1) lane lookup |
 | Stack | Stores recent system logs |
-| Binary Search Tree | Stores vehicle records |
+| Binary Search Tree | Maintains registered vehicle records |
 
 ---
 
 # 🔗 How Each Data Structure Is Used
 
-| Data Structure | Usage |
-|---------------|-------|
+| Data Structure | Usage in Project |
+|---------------|------------------|
+| Circular Linked List | Maintains the circular connection between all traffic lanes |
 | Circular Queue | Controls traffic signal rotation |
-| Circular Linked List | Connects traffic lanes in circular order |
-| Array | Direct lane lookup for manual updates |
-| Stack | Stores recent traffic events |
-| BST | Stores registered vehicle records |
+| Array | Provides direct lane lookup for manual updates |
+| Stack | Stores recent traffic events using LIFO |
+| Binary Search Tree | Stores registered vehicle records and supports Insert, Search and Delete operations |
 
 ---
 
@@ -104,65 +95,18 @@ This project demonstrates how multiple data structures work together to solve a 
 
 ---
 
-# 🌟 Project Highlights
-
-- Real-Time Traffic Signal Simulation
-- Hybrid Data Structure Design
-- Dynamic Memory Allocation
-- O(1) Lane Lookup
-- Menu-Driven Console Application
-- BST Vehicle Registry
-- Modular Code Structure
-
----
-
-# 🔄 System Workflow
-
-```text
-Start
-   │
-   ▼
-Initialize Traffic Lanes
-   │
-   ▼
-Initialize Vehicle Registry
-   │
-   ▼
-Start Traffic Signal
-   │
-   ▼
-Display Dashboard
-   │
-   ▼
-Display Menu
-   │
-   ▼
-Select Operation
-   │
-   ├── Simulate One Second
-   ├── Update Lane Traffic
-   ├── View System Logs
-   ├── Add Vehicle
-   ├── Search Vehicle
-   ├── Delete Vehicle
-   ├── Display Vehicle Registry
-   └── Exit
-```
-
----
-
 # 📋 Main Menu
 
 ```text
 ================ SYSTEM MENU ================
 
 1. Simulate One Second
-2. Update Lane Traffic (O(1) Array Lookup)
-3. View System Logs (Stack)
-4. Add Vehicle to Registry (BST Insert)
-5. Search Vehicle (BST Search)
-6. Delete Vehicle (BST Delete)
-7. Display Vehicle Registry (Inorder Traversal)
+2. Update Lane Traffic
+3. View System Logs
+4. Add Vehicle to Registry
+5. Search Vehicle
+6. Delete Vehicle
+7. Display Vehicle Registry
 8. Exit
 ```
 
@@ -172,12 +116,12 @@ Select Operation
 
 | Algorithm | Purpose |
 |-----------|---------|
-| Circular Queue Rotation | Traffic Signal Scheduling |
+| Circular Queue Rotation | Traffic Signal Management |
 | BST Insert | Register Vehicle |
 | BST Search | Search Vehicle |
-| BST Delete | Delete Vehicle |
-| Inorder Traversal | Display Vehicles in Sorted Order |
-| Stack Push | Store System Events |
+| BST Delete | Remove Vehicle |
+| Inorder Traversal | Display Vehicle Registry |
+| Stack Push | Store Traffic Events |
 | Stack Pop | Remove Recent Events |
 
 ---
@@ -186,29 +130,30 @@ Select Operation
 
 | Operation | Complexity |
 |-----------|------------|
-| Lane Lookup (Array) | O(1) |
-| Stack Push | O(1) |
-| Stack Pop | O(1) |
-| Traffic Signal Rotation | O(1) |
-| BST Insert | O(log n)* |
-| BST Search | O(log n)* |
-| BST Delete | O(log n)* |
-| BST Inorder Traversal | O(n) |
-
-> *Average case.*
+| Array Lookup | **O(1)** |
+| Traffic Signal Rotation | **O(1)** |
+| Stack Push | **O(1)** |
+| Stack Pop | **O(1)** |
+| BST Insert | **O(log n)** *(Average)* |
+| BST Search | **O(log n)** *(Average)* |
+| BST Delete | **O(log n)** *(Average)* |
+| BST Inorder Traversal | **O(n)** |
 
 ---
 
 # 📂 Project Structure
 
 ```text
-Smart-Traffic-Control-System/
+Smart-Traffic-Control-System-DSA/
 │
 ├── LaneNode.h
-├── LogStack.h
 ├── TrafficQueue.h
+├── LogStack.h
 ├── VehicleBST.h
 ├── main.cpp
+│
+├── Smart_Traffic_Control_System_Report.docx
+├── Smart_Traffic_Control_System_UML.png
 │
 ├── README.md
 ├── LICENSE
@@ -217,19 +162,79 @@ Smart-Traffic-Control-System/
 
 ---
 
-# ▶️ How to Run
+# 📑 Project Documentation
 
-## Visual Studio
+The repository also contains complete project documentation.
 
-1. Open Visual Studio.
-2. Create an Empty C++ Project.
-3. Add all project files.
-4. Build the project.
-5. Press **Ctrl + F5** to run.
+| File | Description |
+|------|-------------|
+| **Smart_Traffic_Control_System_Report.docx** | Complete semester project report including objectives, implementation, data structures, UML diagram, algorithms, and conclusion. |
+| **Smart_Traffic_Control_System_UML.png** | UML Class Diagram representing the architecture and relationships between all project classes. |
 
 ---
 
-## VS Code
+# 🏗️ UML Class Diagram
+
+<p align="center">
+  <img src="Smart_Traffic_Control_System_UML.png" width="900">
+</p>
+
+The UML Class Diagram illustrates the relationships between all classes used in the project, including:
+
+- LaneNode
+- IntersectionCircularQueue
+- LogStack
+- StackNode
+- VehicleBST
+- BSTNode
+
+The diagram also represents composition relationships and dependencies between the implemented data structures.
+
+---
+
+# 📄 Project Report
+
+A complete semester project report is included in this repository.
+
+The report contains:
+
+- Project Introduction
+- Project Objectives
+- Project Overview
+- Data Structures Used
+- System Working
+- UML Class Diagram
+- Relationship Explanation
+- Algorithms
+- Time Complexity Analysis
+- Advantages
+- Limitations
+- Future Enhancements
+- Conclusion
+
+📄 **Report File**
+
+```text
+Smart_Traffic_Control_System_Report.docx
+```
+
+---
+
+# ▶️ How to Run
+
+## 🖥️ Visual Studio (Recommended)
+
+1. Open **Visual Studio**.
+2. Create a new **Empty C++ Project**.
+3. Add all `.h` and `.cpp` files to the project.
+4. Build the solution.
+5. Press **Ctrl + F5** to run the application.
+
+---
+
+## 💻 VS Code
+
+Open the project folder and run:
 
 ```bash
 g++ *.cpp -o TrafficSystem
@@ -238,32 +243,42 @@ g++ *.cpp -o TrafficSystem
 
 ---
 
-# 🎯 Learning Outcomes
+## 🖱️ Dev C++
 
-This project demonstrates practical implementation of:
+1. Open the project.
+2. Compile the project.
+3. Run the executable.
+
+---
+
+# 🎓 Learning Outcomes
+
+This project demonstrates practical implementation of the following Data Structures and concepts:
 
 - Arrays
-- Circular Linked Lists
+- Circular Linked List
 - Circular Queue
 - Stack
 - Binary Search Tree (BST)
 - Dynamic Memory Allocation
 - Menu-Driven Programming
-- Traffic Signal Simulation
-- Data Structure Integration
+- Object-Oriented Programming (OOP)
+- Traffic Management Simulation
 - Time Complexity Analysis
 
 ---
 
 # 🚀 Future Enhancements
 
-- Emergency Vehicle Priority
-- Adaptive Traffic Signal Timing
-- File Handling
-- AVL Tree Integration
-- Multi-Intersection Traffic Management
-- Graph-Based Road Network
-- Graphical User Interface (GUI)
+The following improvements can be added in future versions:
+
+- 🚑 Emergency Vehicle Priority System
+- 📊 Adaptive Traffic Signal Timing
+- 💾 File Handling for Saving and Loading Data
+- 🌳 AVL Tree for Balanced Vehicle Records
+- 🛣️ Multi-Intersection Traffic Management
+- 🗺️ Graph-Based Road Network
+- 🖥️ Graphical User Interface (GUI)
 
 ---
 
@@ -271,9 +286,24 @@ This project demonstrates practical implementation of:
 
 | Technology | Purpose |
 |------------|---------|
-| C++ | Programming Language |
-| Visual Studio | IDE |
-| Console | User Interface |
+| **C++** | Programming Language |
+| **Visual Studio** | Development Environment |
+| **Console Application** | User Interface |
+| **Object-Oriented Programming** | System Design |
+| **Data Structures** | Core Project Implementation |
+
+---
+
+# 📊 Project Summary
+
+| Category | Details |
+|----------|---------|
+| Project Type | Semester Project |
+| Course | Data Structures |
+| Programming Language | C++ |
+| Interface | Console Application |
+| Data Structures | Circular Linked List, Circular Queue, Stack, Array, BST |
+| Development Environment | Visual Studio |
 
 ---
 
@@ -283,6 +313,7 @@ This project demonstrates practical implementation of:
 |-------|---------|
 | **University** | University of Central Punjab (UCP) |
 | **Course** | Data Structures |
+| **Semester** | BSCS |
 | **Project Type** | Semester Project |
 
 ---
@@ -299,8 +330,16 @@ This project demonstrates practical implementation of:
 
 This project is licensed under the **MIT License**.
 
-See the **LICENSE** file for details.
+For more information, see the **LICENSE** file included in this repository.
 
 ---
 
-<h3 align="center">⭐ If you found this project helpful, don't forget to star the repository! ⭐</h3>
+# ⭐ Support
+
+If you found this project useful or learned something from it, consider giving the repository a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
+
+---
+
+<h3 align="center">⭐ Thank you for visiting this repository! ⭐</h3>
